@@ -32,6 +32,10 @@ Decode base58 `string` to `Buffer`.
 
 * [reference C++ Base58 implementation](https://github.com/monero-project/monero/blob/master/src/common/base58.cpp)
 
+## Credits
+
+[Coin Crypto Wallet](https://github.com/CoinSpace).
+
 ## License
 
 MIT
