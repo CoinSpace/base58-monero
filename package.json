@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "description": "Base58 Monero style",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "lint": "eslint *.js"
@@ -34,11 +33,7 @@
       "@coinspace"
     ],
     "env": {
-      "es2020": true,
       "node": true
-    },
-    "parserOptions": {
-      "sourceType": "module"
     },
     "rules": {
       "quotes": [
@@ -48,7 +43,9 @@
     },
     "overrides": [
       {
-        "files": ["*.test.js"],
+        "files": [
+          "*.test.js"
+        ],
         "env": {
           "jest": true
         }

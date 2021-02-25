@@ -1,4 +1,5 @@
-import BN from 'bn.js';
+'use strict';
+const BN = require('bn.js');
 
 const ALPHABET = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz';
 const ALPHABET_SIZE = ALPHABET.length;
@@ -6,7 +7,7 @@ const BLOCK_SIZE = 8;
 const ENCODED_BLOCK_SIZES = [0, 2, 3, 5, 6, 7, 9, 10, 11];
 const FULL_ENCODED_BLOCK_SIZE = ENCODED_BLOCK_SIZES[8]; // 11
 
-export function encode(buf) {
+function encode(buf) {
   if (!(buf instanceof Uint8Array || buf instanceof Buffer)) {
     throw new TypeError('Expected Uint8Array or Buffer');
   }
@@ -33,7 +34,7 @@ export function encode(buf) {
   return encoded;
 }
 
-export function decode(str) {
+function decode(str) {
   if (typeof str !== 'string') {
     throw new TypeError('Expected String');
   }
@@ -67,3 +68,8 @@ export function decode(str) {
   }
   return decoded;
 }
+
+module.exports = {
+  encode,
+  decode,
+};
