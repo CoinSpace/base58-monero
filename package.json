@@ -1,6 +1,6 @@
 {
   "name": "base58-monero",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Base58 Monero style",
   "author": "Coin Crypto Wallet <support@coin.space> (https://coin.space/)",
   "main": "./index.cjs",
