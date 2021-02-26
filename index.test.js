@@ -1,9 +1,6 @@
 /* eslint-disable camelcase */
-'use strict';
-const {
-  encode,
-  decode,
-} = require('./');
+import '@jest/globals';
+import { encode, decode } from './';
 
 // https://github.com/monero-project/monero/blob/v0.17.1.9/tests/unit_tests/base58.cpp#L168-L206
 
