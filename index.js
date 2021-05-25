@@ -62,7 +62,7 @@ export function decode(str) {
     if (num.gte(new BN(2).pow(new BN(8 * ENCODED_BLOCK_SIZES.indexOf(block.length))))) {
       throw TypeError('Overflow');
     }
-    const decodedBlock = num.toBuffer('be', ENCODED_BLOCK_SIZES.indexOf(block.length));
+    const decodedBlock = num.toArrayLike(Buffer, 'be', ENCODED_BLOCK_SIZES.indexOf(block.length));
     decoded.set(decodedBlock, index * BLOCK_SIZE);
   }
   return decoded;
