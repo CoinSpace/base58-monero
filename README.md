@@ -1,5 +1,10 @@
 # base58-monero
 
+[![Build](https://github.com/CoinSpace/base58-monero/actions/workflows/ci.yml/badge.svg)](https://github.com/CoinSpace/base58-monero/actions/workflows/ci.yml)
+[![Version](https://img.shields.io/npm/v/base58-monero?label=version)](https://www.npmjs.com/package/base58-monero)
+[![Downloads](https://img.shields.io/npm/dm/base58-monero)](https://www.npmjs.com/package/base58-monero)
+[![License](https://img.shields.io/github/license/CoinSpace/base58-monero?color=blue)](https://github.com/CoinSpace/base58-monero/blob/master/LICENSE)
+
 Base58 Monero style.
 
 ## Base58 in Monero
